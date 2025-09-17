@@ -1,17 +1,21 @@
-1. Contrastes AA / AAA
-
-👉 C’est une règle d’accessibilité (WCAG). Elle dit que le texte doit être lisible par tout le monde, même par les personnes qui voient mal ou qui ont des troubles de vision.
-
-AA = contraste suffisant (minimum 4.5:1 pour du texte normal).
-
-AAA = encore plus strict (7:1).
+<h1>Documentation VinyleMania</h1>
+ <h2>Accessibilité (a11y)</h2> 
+<ul>
+    <li>Respect du niveau AA des WCAG 2.1.
+    <li>Contraste : texte/fond avec contraste suffisant (WebAIM Contrast Checker).
+    <li>Taille des polices : texte courant ≥ 16px, titres hiérarchisés (H1 > H2 > H3).
+    <li> Focus visible : navigation clavier → l’élément actif doit être entouré.
+    <li>États des composants (boutons, liens, formulaires) :
+</ul>
 <br>
-Attributs aria-*
+<h2>Page 404</h2>
+Affichée lorsqu’un utilisateur tente d’accéder à une URL inexistante.<br>
+Objectifs : éviter un écran vide ou une erreur brute.<br>
+Contenu obligatoire :<br>
+Message clair (“Oups, cette page n’existe pas”).<br>
+Lien retour vers l’accueil.<br>
+Design cohérent avec le reste du site.
 
-👉 Ce sont des aides pour les lecteurs d’écran. Ça ne change pas l’apparence, mais ça donne du sens.
-<br>
-6. Focus visible
+![git!](p2.jpg)
 
-👉 Quand tu utilises TAB, il faut voir où on est (souvent un contour bleu).
-![alt text](image-1.png)
-![alt text](image.png)
+![git!](p3.jpg)
