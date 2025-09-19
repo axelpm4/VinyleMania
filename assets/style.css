@@ -192,7 +192,7 @@
 .concho {
     margin-bottom:10px;
     width: 350px;
-    cursor: url("assets/img/cursor.cur") 8 8, pointer;
+    cursor: url("/assets/img/cursor2.png") 8 8, pointer;
 }
 .vinylebadbunny {
     margin-left: 50px;
