@@ -98,3 +98,222 @@
     font-weight: bold;
     cursor: pointer;
 }
+/* ici c'est la sous-navbar (sub) */
+.sub-navbar {
+    position: relative;
+    top: 40px; /* texte navbar */
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #ffffff;
+    border-bottom: 1px solid #adadad;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+}
+.sub-navbar a {
+    text-decoration: none;
+    color: black;
+    margin-left: 30px;
+    font-weight: 500;
+    transition: color 0.3;
+}
+.sub-navbar a:hover {
+    color: #FE8435;
+}
+/* ici c'est les slides */
+.slider {
+    position: relative;
+    width: 95%;
+    max-width: 1200px;
+    height: 350px;
+    margin: 100px auto;
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: #ddd;
+}
+.slides {
+    display: flex;
+    transition: transform 0.6 ease-in-out;
+    height: 100%;
+}
+.slide {
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.slide-inner {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.slide-content {
+    max-width: 50%;
+}
+.slide-image-img {
+    max-height: 250px;
+    border-radius: 8px;
+}
+.slide-content h2 { 
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.slide-content span {
+    background: red;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.slide-content p {
+    margin: 10px;
+    line-height: 1.4;
+}
+.slide-images {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.profilkarolg {
+    margin-top: 61px;
+    width: 550px;
+}
+.vinylekarolg{
+    margin-left: 100px;
+}
+.concho {
+    margin-bottom:10px;
+    width: 350px;
+    cursor: url("assets/img/cursor.cur") 8 8, pointer;
+}
+.vinylebadbunny {
+    margin-left: 50px;
+}
+
+/* couleurs background card */
+.slide1 { 
+    background: #80A8C1;
+    cursor: url("assets/img/cursor2.png");
+}
+.slide2 {
+    background: #AA3121;
+}
+.slide3 {
+    background: black;
+}
+
+/* ici c'est les flèches */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 50%;
+}
+.arrow.left { left: 10px;}
+.arrow.right {right :10px;}
+/* Section vinyles */
+.vinyles {
+  width: 90%;
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
+.section-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.vinyles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.vinyle-card {
+  text-align: center;
+  position: relative;
+}
+
+.vinyle-img {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.vinyle-img img {
+  width: 100%;
+  transition: opacity 0.4s ease;
+  display: block;
+}
+
+.vinyle-img .hover-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.vinyle-img:hover .main-img {
+  opacity: 0;
+}
+
+.vinyle-img:hover .hover-img {
+  opacity: 1;
+}
+
+/* Boutons sur hover */
+.actions {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.actions button {
+  background: white;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background 0.3s;
+}
+
+.actions button:hover {
+  background: #FE8435;
+  color: white;
+}
+
+.vinyle-img:hover .actions {
+  opacity: 1;
+}
+
+.title {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.price {
+  color: #FE8435;
+  font-weight: bold;
+}

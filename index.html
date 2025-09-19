@@ -1,22 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VinyleMania</title>
     <link rel="stylesheet" href="/assets/style.css"> 
+    <link rel="icon" href="assets/img/logovinylemania.png">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons (optionnel mais utile pour les icônes comme ton sac, user etc.) -->
+    <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 <body>
-     <div class="topbar-marquee">
-        <span>🔥 Bienvenue sur mon site de vinyle 🔥</span>
-     </div>
-  <!-- ici c'est la navbar -->
-   
-   <nav class="navbar">
+
+  <div class="topbar-marquee">
+    <span>🔥 Bienvenue sur mon site de vinyle 🔥</span>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
     <div class="nav-left">
         <img src="/assets/img/logovinylemania.png" alt="logo" class="logo">
         <a href="#">Accueil</a>
@@ -31,6 +33,126 @@
         <i class="bi bi-person"></i>
         <button class="contact-btn">Contact</button>
     </div>
-   </nav>
+  </nav>
+
+  <!-- Sous-navbar -->
+  <div class="sub-navbar">
+    <a href="#">Nouveautés</a>
+    <a href="#">Promotions</a>
+    <a href="#">Lecteur vinyle</a>
+  </div>
+
+  <!-- Slider -->
+  <div class="slider">
+    <div class="slides">
+
+      <!-- Slide 1 -->
+      <div class="slide slide1">
+        <div class="slide-content">
+          <h2>BAD BUNNY – DTMF <span>ÉDITION LIMITÉE</span></h2>
+          <p>Vinyle bleu vibrant, l’énergie de l’été dans ta platine.<br>Disponible en location !</p>
+        </div>
+        <div class="slide-images">
+          <img src="assets/img/vinyledtmf.png" class="vinylebadbunny">
+          <img src="assets/img/concho.png" class="concho">
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="slide slide2">
+        <div class="slide-content">
+          <h2>KAROL G - TROPICOQUETA</h2>
+          <p>Vinyle collector incontournable, toutes ses plus grands hits réunis.<br>Disponible en location !</p>
+        </div>
+        <div class="slide-images">
+          <img src="assets/img/karolgvinyle.png" class="vinylekarolg">
+          <img src="assets/img/profilkarolg.png" class="profilkarolg">
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="slide slide3">
+        <div class="slide-content">
+          <h2>THE WEEKND - THE HIGHLIGHT</h2>
+          <p>Plonge dans l’univers envoûtant de ses hits emblématiques sur ta platine.<br>Disponible en location !</p>
+        </div>
+        <div class="slide-images">
+          <img src="assets/img/theweekndvinyle.png" alt="Vinyle The Weeknd">
+          <img src="assets/img/profiltheweeknd.png" alt="Profil The Weeknd">
+        </div>
+      </div>
+
+    </div>
+    <!-- Flèches slider -->
+    <button class="arrow left">◀</button>
+    <button class="arrow right">▶</button>
+  </div> <!-- 🚨 FIN DU SLIDER -->
+
+  <!-- Section vinyles -->
+  <section class="vinyles">
+    <h2 class="section-title">NOS NOUVEAUTÉS :</h2>
+    <div class="vinyles-grid">
+
+      <!-- Carte vinyle -->
+      <div class="vinyle-card">
+        <div class="vinyle-img">
+          <img src="assets/img/sabrinapochette.jpg" alt="Sabrina Carpenter" class="main-img">
+          <img src="assets/img/sabrinavinyle.png" alt="Vinyle Sabrina Carpenter" class="hover-img">
+          <div class="actions">
+            <button><i class="bi bi-bag-fill"></i></button>
+            <button><i class="bi bi-eye"></i></button>
+            <button><i class="bi bi-play-circle-fill"></i></button>
+          </div>
+        </div>
+        <p class="title">Sabrina Carpenter – Man’s Best Friend</p>
+        <span class="price">20,00€</span>
+      </div>
+      <div class="vinyle-card">
+        <div class="vinyle-img">
+          <img src="assets/img/sabrinapochette.jpg" alt="Sabrina Carpenter" class="main-img">
+          <img src="assets/img/sabrinavinyle.png" alt="Vinyle Sabrina Carpenter" class="hover-img">
+          <div class="actions">
+            <button><i class="bi bi-bag-fill"></i></button>
+            <button><i class="bi bi-eye"></i></button>
+            <button><i class="bi bi-play-circle-fill"></i></button>
+          </div>
+        </div>
+        <p class="title">Sabrina Carpenter – Man’s Best Friend</p>
+        <span class="price">20,00€</span>
+      </div>
+      <div class="vinyle-card">
+        <div class="vinyle-img">
+          <img src="assets/img/sabrinapochette.jpg" alt="Sabrina Carpenter" class="main-img">
+          <img src="assets/img/sabrinavinyle.png" alt="Vinyle Sabrina Carpenter" class="hover-img">
+          <div class="actions">
+            <button><i class="bi bi-bag-fill"></i></button>
+            <button><i class="bi bi-eye"></i></button>
+            <button><i class="bi bi-play-circle-fill"></i></button>
+          </div>
+        </div>
+        <p class="title">Sabrina Carpenter – Man’s Best Friend</p>
+        <span class="price">20,00€</span>
+      </div>
+      <div class="vinyle-card">
+        <div class="vinyle-img">
+          <img src="assets/img/sabrinapochette.jpg" alt="Sabrina Carpenter" class="main-img">
+          <img src="assets/img/sabrinavinyle.png" alt="Vinyle Sabrina Carpenter" class="hover-img">
+          <div class="actions">
+            <button><i class="bi bi-bag-fill"></i></button>
+            <button><i class="bi bi-eye"></i></button>
+            <button><i class="bi bi-play-circle-fill"></i></button>
+          </div>
+        </div>
+        <p class="title">Sabrina Carpenter – Man’s Best Friend</p>
+        <span class="price">20,00€</span>
+      </div>
+      
+
+      <!-- Tu pourras dupliquer pour les autres vinyles -->
+
+    </div>
+  </section>
+
+  <script src="/assets/script.js"></script> 
 </body>
 </html>
