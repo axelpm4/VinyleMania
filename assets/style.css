@@ -244,7 +244,6 @@
 }
 
 .vinyle-card {
-  text-align: center;
   position: relative;
 }
 
@@ -316,4 +315,57 @@
 .price {
   color: #FE8435;
   font-weight: bold;
+}
+
+/* page nouveautés */
+.old-price {
+  text-decoration: line-through;
+  color: #666;
+}
+
+.new-price {
+  font-weight: bold;
+  color: #000;
+}
+
+/* Footer */
+
+footer {
+  background-color: #000;
+  color: #ddd;
+  padding: 20px 40px;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.footer-logo {
+  height: 120px;
+}
+.footer-nav {
+  display: flex;
+  gap: 20px;
+}
+.footer-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3 ease;
+}
+.footer-nav a:hover {
+  color: #FE8435;
+}
+.footer-bottom {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 13px;
+  border-top: 1px solid #333;
+  padding-top: 10px;
 }
