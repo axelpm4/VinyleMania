@@ -369,3 +369,161 @@ footer {
   border-top: 1px solid #333;
   padding-top: 10px;
 }
+
+  /* PAGE CATALOGUE  */
+
+
+/* Container principal */
+.catalogue-container {
+  width: 90%;
+  margin: auto;
+  padding: 90px 0;
+  background: #ffffff;
+}
+
+/* Titre principal */
+.catalogue-title {
+  text-align: center;
+  font-size: 60px;
+  margin-left: 500px;
+}
+
+/* Barre recherche + filtres */
+.catalogue-topbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+}
+
+.catalogue-search {
+  padding: 8px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.catalogue-filter-btn {
+  padding: 8px 15px;
+  background: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+.catalogue-filters {
+  display: none;              
+  background: white;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;        
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.catalogue-filters.active {
+  display: block;         
+}
+
+.catalogue-filter-group {
+  margin-bottom: 15px;
+}
+
+.catalogue-filter-group label {
+  display: block;
+  margin: 5px 0;
+}
+
+/* Grille vinyles */
+.catalogue-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 200px;
+}
+
+.catalogue-card {
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  text-align: center;
+  padding: 15px;
+}
+
+.catalogue-card img {
+  width: 80%;
+  border-radius: 8px;
+}
+.catalogue-card p {
+  font-size: 20px;
+  text-align: center
+}
+
+
+
+
+/* Image wrapper */
+
+
+.vinyle-img {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.vinyle-img img {
+  width: 100%;
+  display: block;
+  transition: opacity 0.4s ease;
+}
+
+/* Image hover */
+.vinyle-img .hover-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.vinyle-img:hover .main-img {
+  opacity: 0;
+}
+
+.vinyle-img:hover .hover-img {
+  opacity: 1;
+}
+
+/* Boutons sur hover */
+.actions {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.actions button {
+  background: white;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.actions button:hover {
+  background: #FE8435;
+  color: white;
+  transform: scale(1.1);
+}
+
+.vinyle-img:hover .actions {
+  opacity: 1;
+}
