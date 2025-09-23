@@ -82,3 +82,14 @@ document.addEventListener("DOMContentLoaded", () => {
   // Afficher la première page au début
   showPage(1);
 });
+// ici c'est la page 404 
+
+document.addEventListener("DOMContentLoaded", () => {
+  const button = document.getElementById("soundBtn");
+  const sound = document.getElementById("elevatorSound");
+
+  button.addEventListener("click", () => {
+    sound.currentTime = 0; // remet au début si déjà joué
+    sound.play();
+  });
+});
