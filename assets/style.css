@@ -39,9 +39,11 @@ html {
     transform: translateX(-100%);
   }
 }
+
 .bi-bag-fill {
   color: black;       /* Change la couleur de l'icône */
   text-decoration: none; /* Retire le soulignement du lien */
+
 }
     /* ICI C'EST LA NAVBAR */
 
@@ -914,4 +916,3 @@ body.error-404 {
 .panier-form-btn {
   background: black;
   color: white;
-}
