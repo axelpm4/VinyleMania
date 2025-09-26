@@ -1041,3 +1041,19 @@ input {
   background: #1c3b29;
   color: #fff;
 }
+    .page-merci {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+    .page-merci h1 {
+      font-size: 28px;
+      margin: 20px 0;
+    }
+    .checkmark {
+      font-size: 80px;
+      color: green;
+    }
