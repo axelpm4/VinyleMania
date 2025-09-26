@@ -112,7 +112,7 @@ html {
 /* ici c'est la sous-navbar (sub) */
 .sub-navbar {
     position: relative;
-    top: 40px; /* si tu as déjà une navbar au-dessus */
+    top: 40px; 
     left: 0;
     width: 100%;
     height: 50px;
@@ -137,7 +137,6 @@ html {
 
 /* Sections */
 section {
-    padding: 100px 40px 20px; /* top padding pour que le contenu ne soit pas caché par la sous-navbar */
     box-sizing: border-box;
 }
 /* ici c'est les slides */
@@ -655,7 +654,17 @@ body.error-404 {
   margin: 90px auto;
   padding: 0 20px 100px; /* espace bas pour footer */
 }
-
+.btn-paiement {
+  padding: 10px 30px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+  border: none;
+  font-weight: bold;
+  background-color: rgb(241, 241, 241);
+  text-align: center;
+  color: black;
+}
 /* === Barre de progression === */
 .checkout-steps-bar {
   display: flex;
@@ -781,7 +790,7 @@ body.error-404 {
 .form-grid-dates {
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  gap: 14px;
+  gap: 28px;
 }
 
 .contact-card-unique button:hover {
@@ -916,3 +925,119 @@ body.error-404 {
 .panier-form-btn {
   background: black;
   color: white;
+}
+/* Général */
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #111;
+  margin: 0;
+  padding: 0;
+}
+
+.page-paiement {
+  width: 70%;
+  margin: 40px auto;
+}
+
+/* Progression */
+.progression {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.progression .ligne {
+  flex: 1;
+  height: 2px;
+  background: #111;
+  margin: 0 10px;
+}
+
+.progression .etape.active {
+  color: #000;
+}
+
+/* Titres */
+.titre-page {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.titre-section {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Grille formulaire */
+.grille-formulaire {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.grille-formulaire .full-width {
+  grid-column: span 2;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+/* Modes de paiement */
+.moyens-paiement {
+  display: flex;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.moyens-paiement img {
+  height: 40px;
+  cursor: pointer;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  padding: 5px;
+  background: #fafafa;
+  transition: transform 0.2s;
+}
+
+.moyens-paiement img:hover {
+  transform: scale(1.1);
+}
+
+/* Boutons */
+.section-boutons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.btn-paiement {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-paiement.annuler {
+  background: #1c3b29;
+  color: #fff;
+}
+
+.btn-paiement.suivant {
+  background: #1c3b29;
+  color: #fff;
+}
