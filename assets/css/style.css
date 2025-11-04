@@ -850,7 +850,7 @@ body.error-404 {
 /* Page contact */
 
 .body-contact {
-  background: url(./assets/img/fondcontact.png) no-repeat center center;
+  background: url(../img/fondcontact.png) no-repeat center center;
   background-size: cover; /* L'image s'adapte à la taille de l'écran */
   background-attachment: fixed; /* optionnel : effet "parallaxe" */
 }
