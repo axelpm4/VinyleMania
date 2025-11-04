@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="icon" href="assets/img/logovinylemania.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <!-- top bar ici :) -->
+    <div class="topbar-marquee">
+    <span>🔥 Bienvenue sur mon site de vinyle 🔥</span>
+  </div>
+    <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-left">
+        <img src="/assets/img/logovinylemania.png" alt="logo" class="logo">
+        <a href="/index.html">Accueil</a>
+        <a href="#">Catalogue</a>
+    </div>
+    <div class="nav-center">
+        <img src="/assets/img/vinylenav.png" alt="Vinyle" class="vinyle">
+    </div>
+     <div class="nav-right">
+        <i class="bi bi-search"></i>
+          <a href="/pages/panier.html" class="bi bi-bag-fill"></a>
+        <a href="/pages/contact.html" class="contact-btn">Contact</a>
+    </div>
+  </nav>
+   <!-- Bouton burger (mobile) -->
+<div class="hamburger" id="hamburger">☰</div>
+
+<!-- Menu latéral (mobile) -->
+<nav id="nav-menu">
+  <div class="menu-header">
+    <span class="close-btn" id="close-btn">✖</span>
+    <!-- logo visible que dans le menu mobile -->
+    <img src="/assets/img/logovinylemania.png" alt="logo" class="menu-logo">
+  </div>
+  <a href="/index.html">Accueil</a>
+  <a href="/pages/catalogue.html">Catalogue</a>
+  <a href="/index.html">Nouveautés</a>
+  <a href="/index.html">Promotions</a>
+  <a href="/index.html">Lecteur vinyle</a>
+  <a href="/pages/contact.html">Contact</a>
+</nav>
+ <section class="catalogue-container">
+  <h1 class="catalogue-title">Catalogue Vinyles</h1>
+
+  <!-- Barre recherche + bouton filtre -->
+ <div class="catalogue-topbar">
+  <input type="text" placeholder="Rechercher..." class="catalogue-search">
+  <button class="catalogue-filter-btn" id="toggle-filters">Filtres</button>
+</div>
+
+  <!-- Menu filtres déroulant -->
+  <div class="catalogue-filters" id="catalogue-filters">
+    <h3 class="catalogue-filters-title">Filtres :</h3>
+
+    <div class="catalogue-filter-group">
+      <strong>Genre</strong>
+      <label><input type="checkbox"> Hip-Hop</label>
+      <label><input type="checkbox" checked> Reggaeton</label>
+      <label><input type="checkbox"> Animation Japonaise</label>
+      <label><input type="checkbox"> K-Pop</label>
+    </div>
+
+    <div class="catalogue-filter-group">
+      <strong>Artiste</strong>
+      <p>(à compléter)</p>
+    </div>
+
+    <div class="catalogue-filter-group">
+      <strong>Prix</strong>
+      <p>(à compléter)</p>
+    </div>
+  </div>
+
+ <!-- Grille vinyles -->
+<div class="catalogue-grid" id="catalogue-grid">
+
+  <div class="catalogue-card">
+    <div class="vinyle-img">
+      <img src="/assets/img/pochettemaluma.png" alt="Vinyle" class="main-img">
+      <img src="/assets/img/vinylemaluma.png" alt="Vinyle Hover" class="hover-img">
+      <div class="actions">
+        <button><i class="bi bi-bag-fill"></i></button>
+        <button><i class="bi bi-play-circle"></i></button>
+        <button><i class="bi bi-eye"></i></button>
+      </div>
+    </div>
+    <h4>Rauw Alejandro – Cosa Nuestra</h4>
+    <p>15,99€ / mois</p>
+  </div>
+
+  <div class="catalogue-card">
+    <div class="vinyle-img">
+      <img src="/assets/img/pochettemaluma.png" alt="Vinyle" class="main-img">
+      <img src="/assets/img/vinyledtmf.png" alt="Vinyle Hover" class="hover-img">
+      <div class="actions">
+        <button><i class="bi bi-bag-fill"></i></button>
+        <button><i class="bi bi-play-circle"></i></button>
+        <button><i class="bi bi-eye"></i></button>
+      </div>
+    </div>
+    <h4>Maluma – Papi Juancho</h4>
+  </div>
+
+  <div class="catalogue-card">
+    <div class="vinyle-img">
+      <img src="/assets/img/pochettemaluma.png" alt="Vinyle" class="main-img">
+      <img src="/assets/img/vinyledtmf.png" alt="Vinyle Hover" class="hover-img">
+      <div class="actions">
+        <button><i class="bi bi-bag-fill"></i></button>
+        <button><i class="bi bi-play-circle"></i></button>
+        <button><i class="bi bi-eye"></i></button>
+      </div>
+    </div>
+    <h4>Feid – Ferxxocalipsis</h4>
+  </div>
+
+  <div class="catalogue-card">
+    <div class="vinyle-img">
+      <img src="/assets/img/pochettemaluma.png" alt="Vinyle" class="main-img">
+      <img src="/assets/img/vinyledtmf.png" alt="Vinyle Hover" class="hover-img">
+      <div class="actions">
+        <button><i class="bi bi-bag-fill"></i></button>
+        <button><i class="bi bi-play-circle"></i></button>
+        <button><i class="bi bi-eye"></i></button>
+      </div>
+    </div>
+    <h4>Karol G – Mañana Será Bonito</h4>
+  </div>
+
+  <div class="catalogue-card">
+    <div class="vinyle-img">
+      <img src="/assets/img/pochettemaluma.png" alt="Vinyle" class="main-img">
+      <img src="/assets/img/vinyledtmf.png" alt="Vinyle Hover" class="hover-img">
+      <div class="actions">
+        <button><i class="bi bi-bag-fill"></i></button>
+        <button><i class="bi bi-play-circle"></i></button>
+        <button><i class="bi bi-eye"></i></button>
+      </div>
+    </div>
+    <h4>Rosalía – Motomami</h4>
+  </div>
+
+  <div class="catalogue-card">
+    <div class="vinyle-img">
+      <img src="/assets/img/pochettemaluma.png" alt="Vinyle" class="main-img">
+      <img src="/assets/img/vinyledtmf.png" alt="Vinyle Hover" class="hover-img">
+      <div class="actions">
+        <button><i class="bi bi-bag-fill"></i></button>
+        <button><i class="bi bi-play-circle"></i></button>
+        <button><i class="bi bi-eye"></i></button>
+      </div>
+    </div>
+    <h4>Rosalía – Motomami</h4>
+  </div>
+
+  <div class="catalogue-card">
+    <div class="vinyle-img">
+      <img src="/assets/img/pochettemaluma.png" alt="Vinyle" class="main-img">
+      <img src="/assets/img/vinyledtmf.png" alt="Vinyle Hover" class="hover-img">
+      <div class="actions">
+        <button><i class="bi bi-bag-fill"></i></button>
+        <button><i class="bi bi-play-circle"></i></button>
+        <button><i class="bi bi-eye"></i></button>
+      </div>
+    </div>
+    <h4>Rosalía – Motomami</h4>
+  </div>
+
+</div>
+<!-- Pagination -->
+<div class="catalogue-pagination" id="catalogue-pagination">
+  <button id="prev">&laquo; Précédent</button>
+  <button class="page-btn active" data-page="1">1</button>
+  <button class="page-btn" data-page="2">2</button>
+  <button class="page-btn" data-page="3">3</button>
+  <button id="next">Suivant &raquo;</button>
+</div>
+</section> 
+<!-- ici c'est le footer -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-left">
+      <img src="/assets/img/logovinylemania.png" alt="logo vinylemania" class="footer-logo">
+      <span class="footer-texte">"VinylStore – Le vinyle, à vivre et à partager."</span>
+    </div>
+      <nav class="footer-nav">
+      <a href="/index.html">Accueil</a>  
+      <a href="/pages/catalogue.html">Catalogue</a>
+      <a href="/index.html">Nouveautés</a>
+      <a href="/index.html">Promotions</a>
+      <a href="/pages/contact.html">Contact</a>
+    </nav>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 VinyleMania – Tous droits réservés</p>
+  </div>  
+</footer>
+   <script type="module" src="/assets/js/script.js"></script>
+</body>
+</html>
