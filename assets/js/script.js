@@ -109,3 +109,38 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 ;
+// ==== AJOUT DES VINYLES DU JSON ====
+document.addEventListener("DOMContentLoaded", () => {
+  const grid = document.getElementById("catalogue-grid");
+  if (!grid) return;
+
+  fetch("../assets/vinyle.json")
+    .then(response => response.json())
+    .then(data => {
+      data.forEach(vinyle => {
+        const card = document.createElement("div");
+        card.classList.add("catalogue-card");
+
+        card.innerHTML = `
+          <div class="vinyle-img">
+            <img src="${vinyle.image}" alt="${vinyle.title}" class="main-img">
+            <div class="actions">
+              <button><i class="bi bi-bag-fill"></i></button>
+              <button><i class="bi bi-play-circle"></i></button>
+              <button><i class="bi bi-eye"></i></button>
+            </div>
+          </div>
+          <h4>${vinyle.artist} – ${vinyle.title}</h4>
+          <p>${vinyle.price} € / ${vinyle.rental_duration_days} jours</p>
+        `;
+
+        grid.appendChild(card);
+      });
+
+      // ⚡ rappeler la pagination après ajout
+      if (typeof showPage === "function") {
+        showPage(1);
+      }
+    })
+    .catch(error => console.error("Erreur chargement JSON :", error));
+});

@@ -1,0 +1,98 @@
+[
+  {
+    "title": "The King of Limbs",
+    "artist": "Radiohead",
+    "genre": "Rock alternatif",
+    "price": 15,
+    "image": "../assets/img/pochettegazo.png",
+    "rental_duration_days": 7,
+    "total_length": "37:34",
+    "description": "The King of Limbs is the eighth studio album by English rock band Radiohead.",
+    "songs": [
+      { "title": "Bloom", "length": "5:15" },
+      { "title": "Morning Mr Magpie", "length": "4:41" },
+      { "title": "Little by Little", "length": "4:27" },
+      { "title": "Feral", "length": "3:13" },
+      { "title": "Lotus Flower", "length": "5:01" },
+      { "title": "Codex", "length": "4:47" },
+      { "title": "Give Up the Ghost", "length": "4:50" },
+      { "title": "Separator", "length": "5:20" }
+    ]
+  },
+  {
+    "title": "OK Computer",
+    "artist": "Radiohead",
+    "genre": "Rock alternatif",
+    "price": 18,
+    "image": "../assets/img/okcomputer.png",
+    "rental_duration_days": 7,
+    "total_length": "53:21",
+    "description": "OK Computer is the third studio album by Radiohead.",
+    "songs": [
+      { "title": "Airbag", "length": "4:44" },
+      { "title": "Paranoid Android", "length": "6:23" },
+      { "title": "Subterranean Homesick Alien", "length": "4:27" }
+    ]
+  },
+  {
+    "title": "OK Computer",
+    "artist": "Radiohead",
+    "genre": "Rock alternatif",
+    "price": 18,
+    "image": "../assets/img/okcomputer.png",
+    "rental_duration_days": 7,
+    "total_length": "53:21",
+    "description": "OK Computer is the third studio album by Radiohead.",
+    "songs": [
+      { "title": "Airbag", "length": "4:44" },
+      { "title": "Paranoid Android", "length": "6:23" },
+      { "title": "Subterranean Homesick Alien", "length": "4:27" }
+    ]
+  },
+  {
+    "title": "OK Computer",
+    "artist": "Radiohead",
+    "genre": "Rock alternatif",
+    "price": 18,
+    "image": "../assets/img/okcomputer.png",
+    "rental_duration_days": 7,
+    "total_length": "53:21",
+    "description": "OK Computer is the third studio album by Radiohead.",
+    "songs": [
+      { "title": "Airbag", "length": "4:44" },
+      { "title": "Paranoid Android", "length": "6:23" },
+      { "title": "Subterranean Homesick Alien", "length": "4:27" }
+    ]
+  },
+  {
+    "title": "OK Computer",
+    "artist": "Radiohead",
+    "genre": "Rock alternatif",
+    "price": 18,
+    "image": "../assets/img/okcomputer.png",
+    "rental_duration_days": 7,
+    "total_length": "53:21",
+    "description": "OK Computer is the third studio album by Radiohead.",
+    "songs": [
+      { "title": "Airbag", "length": "4:44" },
+      { "title": "Paranoid Android", "length": "6:23" },
+      { "title": "Subterranean Homesick Alien", "length": "4:27" }
+    ]
+  },
+  {
+    "title": "In Rainbows",
+    "artist": "Radiohead",
+    "genre": "Rock alternatif",
+    "price": 16,
+    "image": "../assets/img/inrainbows.png",
+    "rental_duration_days": 5,
+    "total_length": "42:39",
+    "description": "In Rainbows is the seventh studio album by Radiohead.",
+    "songs": [
+      { "title": "15 Step", "length": "3:57" },
+      { "title": "Nude", "length": "4:15" },
+      { "title": "Weird Fishes/Arpeggi", "length": "5:18" }
+    ]
+  }
+  
+]
